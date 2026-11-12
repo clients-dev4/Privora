@@ -342,7 +342,7 @@
                             <label for="scf-email" class="sr-only">Email</label>
                             <input type="email" id="scf-email" name="email" placeholder="Email *" required>
                             <label for="scf-phone" class="sr-only">Téléphone</label>
-                            <input type="tel" id="scf-phone" name="phone" placeholder="Téléphone *" required pattern="^(\+33[67]\d{8}|0[67]\d{8})$" title="Numéro français mobile uniquement (06, 07, +336, +337)">
+                            <input type="tel" id="scf-phone" name="phone" placeholder="Téléphone *" required pattern="(?:(?:\+|00)33[ .\-]?|0)[1679](?:[ .\-]?\d{2}){4}" maxlength="20" inputmode="tel" title="Numéro français uniquement : 06 12 34 56 78 ou +33 6 12 34 56 78">
                         </div>
                         <label for="scf-subject" class="sr-only">Sujet</label>
                         <select id="scf-subject" name="subject">
